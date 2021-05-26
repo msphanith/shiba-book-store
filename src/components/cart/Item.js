@@ -21,11 +21,6 @@ class Item extends Component {
 
             return;
         }
-        // if(e.target.value = 2) {
-        //     alert("You Got 10% Discount!");
-
-        //     return ;
-        // }
         //To check product with stock
 
         // if(e.target.value > this.props.item.product.amount) {
