@@ -8,10 +8,6 @@ class Navbar extends Component {
 
         this.props.cartUpdated();
 
-        let total = 0;
-
-        this.props.cart.map(item => total += item.product.price * item.quantity);
-
         return (
 
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,7 +21,7 @@ class Navbar extends Component {
                             <li><NavLink to="/my-cart">
                                 {
                                     this.props.cart.length > 0 ? (
-                                        <span className="label label-info">{ this.props.cart.length } items: (${total.toFixed(2)})</span>
+                                        <span className="label label-info">{ this.props.cart.length } items)</span>
                                     ) : null
                                 }
                                 <i class="fas fa-shopping-cart"></i> Shopping Card</NavLink></li>
